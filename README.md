@@ -15,5 +15,5 @@ location. An exception, or an evaluation beyond the maximum depth, is reported a
 The package is compiled into the image, with the harness, for any processor of the architecture, so a container
 starts with both compiled.
 
-The package's version is pinned in `Project.toml`. Until CorvusJsonSchema 0.1.0 is in the General registry, the pin is
-the commit being registered.
+Until CorvusJsonSchema 0.1.0 is in the General registry, the `Dockerfile` pins the commit being registered and the
+build fetches the package from it.

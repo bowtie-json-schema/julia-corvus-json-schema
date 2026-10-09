@@ -5,10 +5,10 @@ version = "0.1.0"
 [deps]
 CorvusJsonSchema = "7b662be2-3602-4bf9-b859-13b2e88448f1"
 
-# CorvusJsonSchema 0.1.0 as it is being registered in General. Once it is registered this section goes, and the
-# version comes from the registry.
+# CorvusJsonSchema 0.1.0 as it is being registered in General, which the image's build puts in this directory. Once it
+# is registered this section goes, and the version comes from the registry.
 [sources]
-CorvusJsonSchema = {url = "https://github.com/corvus-dotnet/Corvus.JsonSchema.git", subdir = "src-jl/CorvusJsonSchema", rev = "01239a808128dc6c5c403be0459c3d842958a84b"}
+CorvusJsonSchema = {path = "CorvusJsonSchema"}
 
 [compat]
 CorvusJsonSchema = "0.1"
