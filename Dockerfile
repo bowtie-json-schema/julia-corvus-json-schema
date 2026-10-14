@@ -1,6 +1,6 @@
 # The package's source, fetched on the machine that builds the image, whatever platform the image is for. Git under
 # emulation takes longer over this repository than the build is allowed.
-FROM --platform=$BUILDPLATFORM alpine:3.22 AS source
+FROM --platform=$BUILDPLATFORM alpine:3.24 AS source
 RUN apk add --no-cache git
 # The commit of Corvus.JsonSchema that is CorvusJsonSchema 0.1.0.
 ARG CORVUS_REF=01239a808128dc6c5c403be0459c3d842958a84b
