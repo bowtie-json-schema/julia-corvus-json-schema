@@ -1,0 +1,21 @@
+# This file is machine-generated - editing it directly is not advised
+
+julia_version = "1.13.2"
+manifest_format = "2.1"
+project_hash = "9077b96a23221c7fb68cc1c8052abd25071dc6f1"
+
+[[deps.CorvusJsonSchema]]
+git-tree-sha1 = "1e65c396783bac213715ecc0aab54a120d3dc6bc"
+registries = "General"
+uuid = "7b662be2-3602-4bf9-b859-13b2e88448f1"
+version = "0.1.2"
+
+[[deps.CorvusJsonSchemaBowtie]]
+deps = ["CorvusJsonSchema"]
+path = "."
+uuid = "b0e29788-c189-4d93-b87c-f387dc6d3393"
+version = "0.1.0"
+
+[registries.General]
+url = "https://github.com/JuliaRegistries/General.git"
+uuid = "23338594-aafe-5451-b93e-139f81909106"
