@@ -15,6 +15,6 @@ location. An exception, or an evaluation beyond the maximum depth, is reported a
 The package is compiled into the image, with the harness, for any processor of the architecture, so a container
 starts with both compiled.
 
-The image installs CorvusJsonSchema from Julia's General registry: the latest version that `[compat]` in
-`Project.toml` allows. Dependabot raises that bound when a version is released, and its pull request rebuilds the
-image.
+The image installs CorvusJsonSchema from Julia's General registry, at the version `Manifest.toml` records. When a
+version is released, Dependabot updates `Manifest.toml` (and `[compat]` in `Project.toml`, when the new version is
+outside it), and its pull request rebuilds the image.

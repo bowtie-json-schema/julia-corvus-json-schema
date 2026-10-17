@@ -5,7 +5,7 @@ FROM julia:1.13
 # images are compiled for any processor of the architecture.
 ENV JULIA_CPU_TARGET=generic
 WORKDIR /usr/src/harness
-COPY Project.toml bowtie.jl ./
+COPY Project.toml Manifest.toml bowtie.jl ./
 COPY src src
 # Installs CorvusJsonSchema from Julia's General registry (the latest version Project.toml's [compat] allows), then
 # compiles the package and the harness into package images, so that a container starts with both compiled.
