@@ -6,5 +6,5 @@ version = "0.1.0"
 CorvusJsonSchema = "7b662be2-3602-4bf9-b859-13b2e88448f1"
 
 [compat]
-CorvusJsonSchema = "0.1.1"
+CorvusJsonSchema = "0.1.2"
 julia = "1.11"
