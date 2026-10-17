@@ -15,5 +15,6 @@ location. An exception, or an evaluation beyond the maximum depth, is reported a
 The package is compiled into the image, with the harness, for any processor of the architecture, so a container
 starts with both compiled.
 
-Until CorvusJsonSchema 0.1.0 is in the General registry, the `Dockerfile` pins the commit being registered and the
-build fetches the package from it.
+The image installs CorvusJsonSchema from Julia's General registry: the latest version that `[compat]` in
+`Project.toml` allows. Dependabot raises that bound when a version is released, and its pull request rebuilds the
+image.
